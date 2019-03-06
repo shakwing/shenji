@@ -1,0 +1,28 @@
+{
+   "background": {
+      "page": "bg/background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "icon/icon-64.png",
+      "default_title": "神姬project public"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "jquery.js", "sjp.js" ],
+      "matches": [ "http://pc-play.games.dmm.co.jp/play/kamipro_X_Gro*", "*://*.skh.dmmgames.com/*", "http://osapi.dmm.com/gadgets/ifr*.skh.dmmgames.com*" ]
+   } ],
+   "description": "神姬project public",
+   "icons": {
+      "128": "icon/icon-128.png",
+      "16": "icon/icon-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4I3urc+yhY4oKKJOyUgsvByf7ObbHF7K96oZ1VwSCsqBo/MLjqIxdKIHj7zlgOE8BHSCH9PcX9xYYl/bdsOII7boQT8VLd8lYGpHjegqguBVimLfq3q5mS5bF6fuphAZP5qM6AELEDFVH3E9h72A5BcvPOzD9cksiHIo9r62k/Q8+HCRwz8v8FlSDNHV2ItWEbe2hHMZJbWlI30FXm4N0JpH4Eqa4Gkk4i1s/kjS0/A1CCRzJiUedAh3gN4Kkav8TgbuLes6kln6z30vNJYelYRRlAJwZcyE7u/BfTiggsI69NvQLaKfrqdddlAdnEn5wnCtntMQyh0YUixrGdaqJQIDAQAB",
+   "manifest_version": 2,
+   "name": "神姬project public",
+   "options_page": "settings/index.html",
+   "permissions": [ "management", "*://*/*", "notifications", "webRequest", "tabs", "alarms", "activeTab", "declarativeContent", "storage", "*://*.kamihimeproject.net/*" ],
+   "short_name": "sjpp",
+   "version": "0.0.18.2",
+   "web_accessible_resources": [ "jquery.js", "inject/*", "icon/*", "settings/*", "img/*" ]
+}
