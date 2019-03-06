@@ -730,7 +730,7 @@ $(function(){
 			createEnhanceRCupBtn();
 			createEnhanceSRWeaponBtn();
 			createEnhanceSRCupBtn();
-			//createEnhanceRWeaponBtn();
+			createEnhanceRWeaponBtn();
 			createSellNAccBtn();
 		};
 		
@@ -2332,9 +2332,9 @@ $(function(){
 		function showInfo() {
 			emptyLog();
 			mypageLog("修改：swebok");
-			mypageLog("繁中维护：白墟");
+			mypageLog("繁中维护：鸡王");
 			mypageLog("更新日期：2019/2/20");
-			mypageLog("仅限日天工会内部使用，严禁外传！");
+			mypageLog("仅限骑空士使用，严禁外传！");
 			mypageLog("更新日志：");
 			mypageLog("追加幻枪、斧两种特殊计算");
 			mypageLog("追加任务模块覆盖活动任务");
