@@ -1,0 +1,49 @@
+{
+   "name": "神姬project yx",
+  "description": "神姬project yx",
+  "short_name": "yx",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "icons": {
+      "16":"icon/icon-16.png",
+      "128": "icon/icon-128.png"
+  },
+  "background": {
+    "page": "bg/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon/icon-64.png",
+    "default_title": "神姬project"
+  },
+  "options_page": "settings/index.html",
+  "content_scripts": [
+    {
+      "matches": ["http://www.dmm.co.jp/netgame/social/-/gadgets/=/app_id=242584*",
+                  "*://*.kamihimeproject.net/*",
+                  "http://osapi.dmm.com/gadgets/ifr*.kamihimeproject.net*"],
+      "js": ["jquery.js", "sjp.js"],
+      "all_frames":true
+     }
+  ],
+  "web_accessible_resources": [
+    "jquery.js",
+    "inject/*",
+    "icon/*",
+    "settings/*"
+  ],
+  "permissions": [
+    "management",
+    "*://*/*",
+    "clipboardRead",
+    "clipboardWrite",
+    "notifications",
+    "webRequest",
+    "tabs",
+    "alarms",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "*://*.kamihimeproject.net/*"
+  ]
+}

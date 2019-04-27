@@ -1,0 +1,114 @@
+0.0.29 快捷键支持
+
+0.0.32 战斗和mypage模块拆分,幻兽,蹲队列追加,技能队列第三个数字能指定攻击目标(主要为掉宝使用),大写后英文快捷键一样生效，修复开启快捷键情况下刚进战斗几秒内按键因为战场没初始化完导致报错的情况。
+
+0.0.18  稍微调整了下读取界面
+0.0.19 主界面增加俩按钮,  检查raid 用来查看当前有的raid信息,刷新存在感, 用来让自己的登录时间变成0分, 从而可以接收小号放的raid,去除游戏本身的reportJsException,对话界面调整
+0.0.20 禁止主界面按钮重复点击,避免出现同时卖抽导致gem消失的bug
+0.0.21 增加边侧计算攻刃按钮
+0.0.22 由于加载技能等级需要时间,故如果点过计算攻刃,并且缓存还生效,那么会在编成界面显示攻刃效果
+0.0.23 增加血条和怒气数值显示
+0.0.24 重新加载按钮
+0.0.25 设置页面
+0.0.26 微调
+0.0.27 connecting回来后再判定执行下次队列
+0.0.28 公告栏修复
+
+
+convertHTMLToTexture
+_setSkillButton
+__showPopupPSkillInfo
+
+__showPopupNoPSkillInfo
+_setupWeaponTab
+_startRaid
+
+
+
+_touchRaidPanel
+
+par_001_party_change
+
+n.director.getRunningScene()
+
+
+
+
+var scene = cc.director.getRunningScene();
+scene.seekWidgetByName("window_gray");
+var myBtn = new ccui.Button();
+myBtn.name = "calAttBtn";
+myBtn.setTitleText("显示攻刃");
+myBtn.setPosition(743,361);
+
+var scene = cc.director.getRunningScene();
+var n = scene.seekWidgetByName("sub_weapon_blank_0");
+var n = scene.seekWidgetByName("partymain_weapon")
+var txt = new ccui.Text();
+txt.name="level";
+txt.setString("lv20");
+txt.setPosition(190,510);
+n.addChild(txt);
+
+function printChildName(widget){
+	for(var i=0;i<widget.children.length;i++){
+		var child = widget.children[i];
+		console.log(child.getName());
+		printChildName(child);change
+	}
+}
+function printChildCName(widget){
+	for(var i=0;i<widget.children.length;i++){
+		var child = widget.children[i];
+		console.log(child._className);
+		printChildCName(child);
+	}
+}
+
+
+_onPushBurstButtonCallback
+
+
+
+
+
+var txt = new ccui.Text();
+txt.setString("d");
+txt.setFontSize(24);
+txt.setPosition(25,75)
+n.addChild(txt);
+
+
+lodash
+
+
+
+
+raidboss-support-request-list
+console.log
+
+
+
+var list = $(".raidboss-support-request-list>li");
+var searchFlag = false;
+for(var i=0;i<list.length;i++){
+	var l = $(list[i]);
+	var h3 = l.find("h3");
+	if(h3.text().indexOf("New")>-1){
+		l.find(".ctrl a").click();
+		searchFlag = true;
+		break;
+	}
+}
+if(searchFlag){
+	console.log("find it");
+}else{
+	console.log("not find");	
+}
+
+1
+1
+
+
+暗婊 LV100 セレスト・マグナ
+奥丁 オーディン
