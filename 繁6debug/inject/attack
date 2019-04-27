@@ -1,0 +1,14 @@
+function initBat（）{
+    //战斗
+    var btn =$("<button type='button' class='btn'攻击5次</button>"）；
+    btn.click(function(){
+        autoAttack();
+    }};
+    con.append(atn);
+    
+    var btn =$("<button type='button' class='btn'攻击</button>"）；
+    btn.click(function(){
+        push(att();
+        exe();
+    }};
+    con.append(atn);
